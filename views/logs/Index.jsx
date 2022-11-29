@@ -6,7 +6,6 @@ class Index extends React.Component {
     const  { logs } = this.props
     return (
       <DefaultLayout title="Logs Index Page">
-        <h1>Logs Index Page</h1>
         <nav>
           <a href="/logs/new">Create Log</a>
         </nav>
@@ -18,11 +17,11 @@ class Index extends React.Component {
                   The{' '}
                   <a style={{color: "red"}} href={`/logs/${log._id}`}>{log.name}</a>
                   {" "}
-                  is {log.color} <br />
+                  {log.title} <br />
                   {
                     log.shipIsBroken
-                    ? "Ship is Broken." 
-                    : "Ship is not Broken."
+                    ? "is Broken." 
+                    : "is not Broken."
                   }
                   <br />
                   <a href={`/logs/${log._id}/edit`}>Edit This Log</a>

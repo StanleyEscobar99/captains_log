@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Righteous');
+
+body {
+  background: url(https://cdnb.artstation.com/p/assets/images/images/047/117/543/large/encho-enchev-ship-3.jpg?1646809140);
+  margin: 0;
+  font-family: 'Comfortaa', cursive;
+}
+
+h1 {
+  font-family: 'Righteous', cursive;
+  background: rgb(132, 132, 132);
+  margin:0;
+  margin-bottom: .5em;
+  padding: 1em;
+  text-align: center;
+}
+
+a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  text-shadow: 1px 1px 1px black;
+  font-size: 1.5em;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+a:hover {
+  color: ghostwhite;
+}
+
+li {
+  list-style: none;
+}
+
+li a {
+  color: rgb(0, 0, 0);
+}
+
+input[type=text] {
+  padding: .3em;
+}
+
+input[type=submit] {
+  padding: .3em;
+  color: rgb(142, 142, 142);
+  background: rgb(0, 0, 0);
+  font-size: 1em;
+  border-radius: 10%;
+}

@@ -10,7 +10,6 @@ const Log = require("../models/logs")
 
 //INDEX
 router.get("/", (req, res) => {
-  // Query model to return all fruits
   Log.find({}, (error, allLogs) => {
     if (!error) {
       res.status(200).render("logs/Index", {
@@ -53,15 +52,9 @@ router.post("/", (req, res) => {
   } else {
     req.body.shipIsBroken = false
   }
-  // This does the same thing as the if statement above but with a one line ternary
-  //req.body.readyToEat = req.body.readyToEat === 'on' ? true : false;
 
-    // Create 1st arg: the actual object we want to insert inside our database
-    // Callback 1st arg: error
-    // Callback 2nd arg: the newly created object
 Log.create(req.body, (error, createdLog) => {
     if (!error) {
-      // redirects after creating fruit, to the Index page
       res.status(200).redirect("/logs")
     } else {
       res.status(400).send(error)
@@ -84,9 +77,6 @@ router.get("/:id/edit", (req, res) => {
 
 //SHOW
 router.get("/:id", (req, res) => {
-    // findById 1st arg: the id of the fruit we want to find 
-    // Callback 1st arg: error
-    // Callback 2nd arg: the found fruit object
   Log.findById(req.params.id, (error, foundLog) => {
     if (!error) {
       res

@@ -8,7 +8,6 @@ class New extends React.Component {
         <nav>
           <a href="/logs">Home Page</a>
         </nav>
-            {/* NOTE: action will be the route, method will be the HTTP verb */}
         <form action="/logs" method="POST">
           Title: <input type="text" name="title" /><br />
           Entry: <input type="text" name="entry" /><br />

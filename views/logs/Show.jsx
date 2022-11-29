@@ -7,13 +7,13 @@ class Show extends React.Component {
     return (
       <DefaultLayout title={`${title} Show Page`}>
         <div>
-          <p>The {title} is {entry}.</p>
-          {shipIsBroken? "Ship is Broken!" : "Ship is not Broken"}
+          <p>The {title} {entry}.</p>
+          {shipIsBroken? "is Broken!" : "is not Broken"}
         </div> 
       </DefaultLayout>
     )
   }
 }
-// We can write javascript code within the curly brackets
+
 
 module.exports = Show
